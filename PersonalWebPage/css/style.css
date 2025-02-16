@@ -1,18 +1,74 @@
+/* NAVBAR */
 .navbar {
-    padding: 10px 20px;
+    padding: 10px 20px !important;
+}
+
+@media (min-width: 768px) { /* Tablets e desktops */
+    .navbar {
+        padding: 15px 50px !important;
+    }
 }
 
 .navbar-brand{
-    /* Gradient collar in the text */
-    background-image: linear-gradient(90deg, #004aad, #5de0e6 ); /* Horizontal gradient */
-    -webkit-background-clip: text; /* Applies gradient to text */
-    -webkit-text-fill-color: transparent; /* Makes the text fill transparent to show the gradient */
+    color: #004aad !important;
 }
+
+/* MAIN */
+.badge{
+    margin-top: 20px;
+    background: linear-gradient(45deg, #004aad, #5de0e6);
+}
+
+.margin-content{
+    padding: 30px;
+
+}
+
+@media (min-width: 768px) { /* Tablets e desktops */
+    .margin-contentr {
+        padding: 15px 100px !important;
+    }
+}
+
 
 .title {
     /* Gradient collar in the text */
     font-weight: bold;
-    background-image: linear-gradient(90deg, #004aad, #5de0e6 );
-    -webkit-background-clip: text;
+    background-image: linear-gradient(45deg, #004aad, #5de0e6 );/* Horizontal gradient */
+    -webkit-background-clip: text;/* Applies gradient to text */
     -webkit-text-fill-color: transparent;
+    border-top: 100px !important;
+}
+
+/* ABOUT ME CONTENT */
+.about-me-content {
+    text-align: justify;
+    padding: 20px;
+}
+
+@media (min-width: 768px) { /* Tablets e desktops */
+    .about-me-content {
+        padding: 40px 80px;
+    }
+}
+
+@media (min-width: 1200px) { /* Telas muito grandes */
+    .about-me-content {
+        padding: 60px 120px;
+    }
+}
+
+/* SOCIAL LINKS */
+.social-links a {
+    font-size: 32px; /* Ajust size icon */
+    display: inline-block;
+    background: linear-gradient(45deg, #004aad, #5de0e6);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    transition: transform 0.3s ease-in-out; /* Animation */
+    margin: 10px;
+}
+
+.social-links a:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
 }
