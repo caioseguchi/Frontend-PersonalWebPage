@@ -72,3 +72,9 @@
 .social-links a:hover {
     transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
 }
+
+/* Resume */
+.card {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+}
