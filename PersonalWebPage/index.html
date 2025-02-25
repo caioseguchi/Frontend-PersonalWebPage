@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seguchi your web developer">
     <title>Seguchi | Dev</title>
     <!--CSS Link-->
     <link rel="stylesheet" href="/css/style.css">
@@ -11,100 +12,60 @@
     <!--Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
+    <!--Navegation Bar-->
     <header>
-        <!--Navegation Bar-->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <!--Site name-->
-                <a class="navbar-brand fw-bold" href="index.html">Seguchi | Dev</a>
+      <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid d-flex justify-content-between">
+          <!--Site name-->
+          <a class="navbar-brand" href="index.html">Seguchi | Dev</a>
 
-                <!--Nav bar for compact screem-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <!--data-bs-toggle="collapse": make button works as open/close for menu -->
-                  <!--data-bs-target="#navbarNav": define wich menu will be encapusulade, arg id of div-->
-              
+          <!--Nav bar for compact screem-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-              <!--Navegatio menu-->
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto"><!--"ms-auto" margin start auto send the nav link to right side-->
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/resume.html">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/contacts.html">Contacts</a>
-                  </li>
-                </ul>
-              </div>
+          <!--Navegation Links-->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active nav-link-style" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link nav-link-style" href="/pages/resume.html">Resume</a>
+              <a class="nav-link nav-link-style" href="/pages/agenda.html">Agenda</a>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <!--Main content-->
-    <main>
-        <!--Presentation-->
-        <div class="presentation text-center container-fluid">
-            <div class="container-title">
-                <span class="badge text-bg-primary">Developer - Java | HTML | CSS | Javascript</span>
-
-                <!--Title and subtitle-->
-                <div class="title-subtitle margin-content">
-                    <h1 class="title">Developer | Code, Create, Innovate</h1>
-                    <p class="fs-5 fst-italic">Buildin Solutions, One Line at a Time</p>         
-                </div>
-                
-                <!--Large buttons-->
-                <div class="button-resume-projects">
-                    <button type="button" class="btn btn-primary btn-lg">Resume</button>
-                    <button type="button" class="btn btn-secondary btn-lg">Projects</button>
-                </div>              
-            </div>
-            
-            <!--Profile image-->
-            <div class="text-center margin-content">
-                <img class="profile-image" src="/images/caio-profile.png" class="rounded" alt="profile-picture">
-            </div>
+    <!--Main-->
+    <main class="content">
+      <!--Main content-->
+      <section class="content-main">
+        <div class="content-main-written">
+          <h1 class="content-main-written-title">Seguchi Developer</h1>
+          <h2 class="content-main-written-subtitle">Let me help you with your web page</h2>
+          <button type="button" class="btn btn-primary btn-lg content-main-written-button">Resume</button>
         </div>
+        <img class="content-main-image" src="/images/caio-profile.png" alt="profile-picture">
+      </section>
 
-        <!--About me-->
-        <div class="about-me text-center bg-secondary-subtle">
-
-          <!--Title and subtitle-->
-          <div class="text-center margin-content">
-            <h1 class="title">About me</h1>
-            <p class="fs-5 fst-italic">My name is Caio Seguchi, and I’m here to be your developer solution.</p>
-          </div>
-
-          <!--Content-->
-          <div class="about-me-content">
-            <p class="fs-6">Hi, Seguchi here!</p>
-            <p class="fs-6">I am a Software Developer with a strong background in Java, HTML, CSS, Bootstrap, JavaScript, MySQL, Spring Boot, and Angular. I recently graduated with a Higher Diploma in Science in Computing from NCI, where I built solid technical expertise and developed a passion for problem-solving through technology.</p>
-            <p class="fs-6">Originally from Brazil, I hold a degree in Mechanical Engineering and have gained diverse experience in different industries:</p>
-            <ul>
-              <li class="fs-6">Consulting Engineer – Focused on machine safety and civil construction with steel.</li>
-              <li class="fs-6">Robotics Teacher – Taught programming and robotics to children, fostering innovation at an early stage.</li>
-              <li class="fs-6">University Professor – Shared knowledge in technical and engineering fields.</li>
-            </ul>
-            <p class="fs-6">My journey brought me to Ireland, where I initially came to study English. What started as a two-year learning experience turned into a career transition into software development, a field I am deeply passionate about.</p>
-            <p class="fs-6">I am excited to apply my engineering mindset, problem-solving skills, and programming expertise to real-world challenges. Let’s build something amazing together!</p>
-            </div>
-
-            <!--social midias links + call icons from Bootstrap icon-->
-            <div class="social-links margin-content">    
-            <a href="https://github.com/caioseguchi"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/caio-seguchi-882351232/"><i class="bi bi-linkedin"></i></a>
-            </div>
-        </div>
-        
+      <!--Main secundary-->
+      <section class="content-secondary">
+        <div class="container">
+          <h3 class="content-secondary-title">About me</h3>
+          <p class="content-secondary-paragraph">I’m from Brazil, and I have a degree in Mechanical Engineering. I worked as a university professor, taught robotics to children, and also worked as a technical consultant in engineering.</p>
+          <p class="content-secondary-paragraph">I have always been passionate about technology, and this passion became stronger when I was teaching robotics. That’s when I decided to transition into IT. In 2022, I moved to Ireland to study English, and in 2024, I completed a Higher Diploma in Science in Computing at NCI. During the course, I developed practical projects using Java, Spring Boot, MySQL, HTML, CSS, and JavaScript. My final project was a hotel management system, where I worked on full-stack development.</p>
+          <p class="content-secondary-paragraph">Now, I’m looking for my first opportunity as a Junior Developer, eager to contribute, learn, and grow in the tech industry.</p>
+        </div>  
+      </section>
     </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <a class="footer-icon" href="https://github.com/caioseguchi"><i class="bi bi-github"></i></a>
+      <a class="footer-icon" href="https://www.linkedin.com/in/caio-seguchi-882351232/"><i class="bi bi-linkedin"></i></a>
+    </footer>
     
 </body>
 
