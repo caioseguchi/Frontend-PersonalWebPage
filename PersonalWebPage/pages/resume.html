@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seguchi your web developer">
     <title>Seguchi | Dev</title>
     <!--CSS Link-->
     <link rel="stylesheet" href="../css/style.css">
@@ -11,157 +12,164 @@
     <!--Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
+    <!--Navegation Bar-->
     <header>
-        <!--Navegation Bar-->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <!--Site name-->
-                <a class="navbar-brand fw-bold" href="../index.html">Seguchi | Dev</a>
+      <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid d-flex justify-content-between">
+          <!--Site name-->
+          <a class="navbar-brand" href="index.html">Seguchi | Dev</a>
 
-                <!--Nav bar for compact screem-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <!--data-bs-toggle="collapse": make button works as open/close for menu -->
-                  <!--data-bs-target="#navbarNav": define wich menu will be encapusulade, arg id of div-->
-              
+          <!--Nav bar for compact screem-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-              <!--Navegatio menu-->
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto"><!--"ms-auto" margin start auto send the nav link to right side-->
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="resume.html">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacts.html">Contacts</a>
-                  </li>
-                </ul>
-              </div>
+          <!--Navegation Links-->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link nav-link-style" href="../index.html">Home</a>
+              <a class="nav-link active nav-link-style" aria-current="page" href="/pages/resume.html">Resume</a>
+              <a class="nav-link nav-link-style" href="/pages/agenda.html">Agenda</a>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <!--Main content-->
-    <main>
-      <!--Title Page Resume-->
-      <div class="title-subtitle margin-content text-center">
-        <h1 class="title">Resume</h1>        
-      </div>
+    <!--Main-->
+    <main class="content-resume">
+      <!--Main content-->
+      <section class="text-center">
+        <h1 class="content-main-written-title-resume">Resume</h1>
+      </section>
 
-      <!--Experience Section-->
-      <section class="experience container">
-
-        <!-- Experience Title -->
-        <div class="subtitle-category">
-          <h2 class="title">Experence</h2>
-          <button type="button" class="btn btn-primary btn-lg"><i class="bi bi-box-arrow-down"></i> Download Resume</button>
-        </div>
-
-        <!-- Experience Card 1 -->
-        <div class="container">
-          <div class="card shadow p-4 mb-5 border-0">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-               <div class="card me-4" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">2024 - NCI Final Project</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Developer</h6>
-                  <p class="card-text">The challenge of the final project was to build a fullstack website.</p>
-                </div>
-              </div>
-              <p class="mb-0 width-18rem">The project requirements are: two types of users, login system, a database, a search tool and two APIs. Those are the links for the projects: <a href="https://github.com/caioseguchi/project-hotel-dublin-city">Github</a> and <a href="https://hotel-dublin-city-be28be526534.herokuapp.com/">Hotel Dublin City Project</a> (The project will be temporary avaliable online)</p>
-            </div>
+      <!--Main secundary Projects-->
+      <section class="container">
+        <!--Main secundary Projects title-->
+        <div class="content-projects">
+          <div class="content-project-title">
+            <h1 class="content-project-written-title">Projects</h1>
+            <button type="button" class="btn btn-primary btn-lg content-project-written-title-button"><i class="bi bi-download"></i> Resume</button>
           </div>
-         </div>
-        
-
-        <!-- Experience-card2 -->
-        <div class="container">
-          <div class="card shadow p-4 mb-5 border-0">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-               <div class="card me-4" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">2025 - Present</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Developer</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+  
+          <!--Main secundary Projects content-->
+          <div class="content-project-cards">
+            <!--Project 1-->
+            <div class="card shadow">
+              <div class="card-header">
+                <p class="content-secondary-paragraph">Frontend</p>
               </div>
-              <p class="mb-0">This is some text within a card body.</p>
-            </div>
-          </div>
-         </div>
-
-      <!--Education-->
-      <section class="experience container">
-
-        <!-- Education Title -->
-        <div class="subtitle-category">
-          <h2 class="title">Education</h2>
-          <button type="button" class="btn btn-primary btn-lg"><i class="bi bi-box-arrow-down"></i> Download Resume</button>
-        </div>
-
-        <!-- Education Card 1 -->
-        <div class="container">
-          <div class="card shadow p-4 mb-5 border-0">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-               <div class="card me-4 bg-dark-emphasis" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">2021 - Infraestructure Secretary</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Engineer</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+              <div class="card-body">
+                <h5 class="content-secondary-title-project">Personal Web Page</h5>
+                <p class="content-secondary-paragraph">Frontend Portfolio This is a frontend project showcasing my portfolio, built with HTML, CSS, Bootstrap and JavaScript.</p>
+                <a href="https://github.com/caioseguchi/Frontend-PersonalWebPage.git" class="btn btn-primary">Personal web page</a>
               </div>
-              <p class="mb-0">This is some text within a card body.</p>
             </div>
-          </div>
-         </div>
-        
-
-        <!-- Education-card2 -->
-        <div class="container">
-          <div class="card shadow p-4 mb-5 border-0">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-               <div class="card me-4" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">2025 - Present</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Developer</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+            
+  
+            <!--Project 2-->
+            <div class="card shadow">
+              <div class="card-header">
+                <p class="content-secondary-paragraph">Java</p>
               </div>
-              <p class="mb-0">This is some text within a card body.</p>
+              <div class="card-body">
+                <h5 class="content-secondary-title-project">Item Checker</h5>
+                <p class="content-secondary-paragraph">This Java project verifies the validity of license plates and Twitter usernames based on predefined rules. Technologies used Java, JOptionPane (for user interaction) and Regular Expressions (Regex) for validation</p>
+                <a href="https://github.com/caioseguchi/Frontend-PersonalWebPage.git" class="btn btn-primary">ItemCheckerApp</a>
+              </div>
             </div>
-          </div>
-         </div>
-
-      <section>
-        <div class="card">
-          <div class="card-body">
-            <h2 class="title">Professional Skills</h2>
-            <span class="badge text-bg-secondary">Secondary</span>
-            <span class="badge text-bg-secondary">Secondary</span>
-            <span class="badge text-bg-secondary">Secondary</span>
-            <span class="badge text-bg-secondary">Secondary</span>
-            <span class="badge text-bg-secondary">Secondary</span>
-            <span class="badge text-bg-secondary">Secondary</span>
-            <h2 class="title">Language</h2>
-            <span class="badge text-bg-secondary">Secondary</span>
-            <span class="badge text-bg-secondary">Secondary</span>
-            <span class="badge text-bg-secondary">Secondary</span>
-            <span class="badge text-bg-secondary">Secondary</span>
-            <span class="badge text-bg-secondary">Secondary</span>
-            <span class="badge text-bg-secondary">Secondary</span>
+            
+  
+            <!--Project 3-->
+            <div class="card shadow">
+              <div class="card-header">
+                <p class="content-secondary-paragraph">Java</p>
+              </div>
+              <div class="card-body">
+                <h5 class="content-secondary-title-project">Bookstore</h5>
+                <p class="content-secondary-paragraph">This project is based on one of my first code challenges, with the goal of practicing object-oriented programming and data manipulation.</p>
+                <a href="https://github.com/caioseguchi/Bookstore.git" class="btn btn-primary">BookstoreApp</a>
+              </div>
+            </div>
+  
+            <!--Project 4-->
+            <div class="card shadow">
+              <div class="card-header">
+                <p class="content-secondary-paragraph">Fullstack</p>
+              </div>
+              <div class="card-body">
+                <h5 class="content-secondary-title-project">Hotel Dublin City</h5>
+                <p class="content-secondary-paragraph">This is the final NCI project. Technologies used, Java, MySQL for database, HTML, CSS, Bootstrap and JavaScript for frontend. Project requirements: two type of users, database, register and login system, search bar, consume of two APIs </p>
+                <a href="https://github.com/caioseguchi/project-hotel-dublin-city.git" class="btn btn-primary">Hotel Dublin City</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-        
-        
+
+      <!--Main third Education-->
+      <section class="container">
+        <!--Education title-->
+        <div class="content-project-title">
+          <h1 class="content-project-written-title">Education</h1>
+        </div>
+
+        <!--Education content-->
+        <div class="education-card">
+          <!--NCI-->
+          <div class="card shadow" style="width: 18rem;">
+            <img src="../images/nci.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="content-secondary-title-project">Higher Diploma in Science Computing</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://www.ncirl.ie/" class="btn btn-primary">NCI</a>
+            </div>
+          </div>
+          
+          <!--UTFPR-->
+          <div class="card shadow" style="width: 18rem;">
+            <img src="../images/pg.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="content-secondary-title-project">Bachelor Mechanical Engineer</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://www.utfpr.edu.br/campus/pontagrossa" class="btn btn-primary">UTFPR</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Main fourth Skills-->
+      <section class="container">
+        <!--Language title-->
+        <div class="content-project-title">
+          <h1 class="content-project-written-title">Language</h1>
+        </div>
+
+        <div class="content-languages">
+
+
+        </div>
+
+
+      </section>
+
+      <!--Main fifth Background expirences-->
+      <section>
+        <div>
+          <h1 class="content-main-written-title">Background Expirences</h1>
+        </div>
+
+      </section>
     </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <a class="footer-icon" href="https://github.com/caioseguchi"><i class="bi bi-github"></i></a>
+      <a class="footer-icon" href="https://www.linkedin.com/in/caio-seguchi-882351232/"><i class="bi bi-linkedin"></i></a>
+    </footer>
+    
 </body>
 
 <!--Bootstrap javascript-->

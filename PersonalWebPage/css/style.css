@@ -27,6 +27,8 @@ body {
     font-size: 24px;
 }
 
+
+
 /* HOME PAGE */
 .content{
     margin-bottom: 48px;
@@ -88,6 +90,7 @@ body {
     margin-top: 48px;
 }
 
+
 .content-secondary-title{
     padding-top: 48px;
     font-family: 'Righteous', cursive;
@@ -95,6 +98,7 @@ body {
     font-size: 24px;
 }
 
+/* HOME AND RESUME PAGE */
 .content-secondary-paragraph{
     text-justify: auto;
     font-family: 'Sarala', sans-serif;
@@ -120,4 +124,79 @@ body {
     height: 48px;
     display: block;
     margin: 0 auto;
+}
+
+/* RESUME PAGE */
+.content-resume{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.content-main-written-title-resume{
+    font-family: "Righteous", serif;
+    font-weight: 400;
+    font-size: 64px;
+    background-image: linear-gradient(90deg, #000000, #3533cd);/* Horizontal gradient */
+    -webkit-background-clip: text;/* Applies gradient to text */
+    -webkit-text-fill-color: transparent;
+}
+
+.content-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content-project-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content-project-written-title{
+    font-family: "Righteous", serif;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.content-project-written-title-button{
+    background-image: linear-gradient(90deg, #000000, #3533cd);/* Horizontal gradient */
+    width: 150px;
+    height: 50px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #090808;
+}
+
+
+.content-project-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-secondary-title-project{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.education-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
 }
