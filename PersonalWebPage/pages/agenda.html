@@ -58,89 +58,29 @@
             <!--New Contact-->
             <div class="card shadow">
               <div class="card-body">
-                <form>
-                  <fieldset disabled>
-                    <legend class="content-secondary-title-project text-center">New Contact</legend>
-                    <!--Name-->
-                    <div class="mb-3">
-                      <label for="disabledTextInput" class="form-label">First name</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="Caio">
-                    </div>
+                <h5 class="content-secondary-title-project">Add new contact</h5>
+                <!--Name-->
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Name</label>
+                  <input type="email" class="form-control" id="inputName" placeholder="Full Name">
+                </div>
+                <!--Number-->
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Number</label>
+                  <input type="email" class="form-control" id="inputNumber" placeholder="0832085677">
+                </div>
+                <button onclick="newContact()" class="btn btn-primary">Add</button>
+                <p id="message"></p>
 
-                    <!--Last Name-->
-                    <div class="mb-3">
-                      <label for="disabledTextInput" class="form-label">Surname</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="Seguchi">
-                    </div>
-
-                    <!--phone number-->
-                    <div class="mb-3">
-                      <label for="disabledTextInput" class="form-label">Phone number</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="0832085675">
-                    </div>
-
-                    <!--email-->
-                    <div class="mb-3">
-                      <label for="disabledTextInput" class="form-label">Email</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="caioseguchi@gmail.com">
-                    </div>
-
-                    <!--category-->
-                    <div class="mb-3">
-                      <label for="disabledSelect" class="form-label">Category</label>
-                      <select id="disabledSelect" class="form-select">
-                        <option>Disabled select</option>
-                      </select>
-                    </div>
-
-                    <div class="mb-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                        <label class="form-check-label" for="disabledFieldsetCheck">
-                          Can't check this
-                        </label>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </fieldset>
-                </form>
               </div>
             </div>
             
   
-            <!--Project 2-->
+            <!--Contact List-->
             <div class="card shadow">
               <div class="card-body">
                 <h5 class="content-secondary-title-project">Contact list</h5>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <ul id="listContacts"></ul>
               </div>
             </div>
 
@@ -161,4 +101,5 @@
 
 <!--Bootstrap javascript-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="agendaScript.js"></script>
 </html>
